@@ -21,7 +21,7 @@
             <p class="alias">Through the lows and the highs, I will stay by your side There's no need for goodbyes, now I'm seeing the light When the sky turns to grey and there's nothing to say At the end of the day, I choose you<span> "</span></p>
         </div>
         
-        <video id="myVideo" class="hide">
+        <video id="myVideo" class="hide" autoplay="autoplay" muted>
             <source src="./img/i-choose.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -33,7 +33,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(function() {
-                vid.play();
+                vid.removeAttribute('muted')
             }, 1000);
         });
         </script> 
