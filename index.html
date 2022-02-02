@@ -27,19 +27,15 @@
         </video>
 
     </main>
-    
-        <button class="hide" id="play-btn" onclick="playVideo()" type="button">Play Video</button>
-
-
+ 
         <script> 
         const vid = document.getElementById("myVideo"); 
 
         document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('#play-btn').click();
+            setTimeout(function() {
+                vid.play();
+            }, 1000);
         });
-        function playVideo(){
-            vid.play();
-        }
         </script> 
 </body>
 </html>
